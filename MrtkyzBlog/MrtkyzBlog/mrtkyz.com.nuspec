@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>mrtkyz.com</id>
+    <version>1.0.9</version>
+    <authors>Murat AKYÜZ</authors>
+    <owners>Murat AKYÜZ</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://mrtkyz.com/</licenseUrl>
+    <projectUrl>http://mrtkyz.com/</projectUrl>
+    <description>Personal BLog Web Site Project</description>
+    <releaseNotes></releaseNotes>
+    <tags></tags>
+  </metadata>
+</package>
