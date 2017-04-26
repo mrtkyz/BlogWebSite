@@ -97,6 +97,7 @@
     <Content Include="Content\js\jquery-1.10.2.min.js" />
     <Content Include="Content\js\modernizr-2.6.2.js" />
     <Content Include="index.html" />
+    <Content Include="health-check.html" />
     <Content Include="Web.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
