@@ -36,6 +36,7 @@
       <HintPath>..\packages\dbup.3.3.5\lib\net35\DbUp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,8 +54,10 @@
     <None Include="Deploy.ps1" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Scripts\" />
+    <Content Include="Scripts\Script0002-DHYS-0000-Table Insert Row.sql" />
+    <Content Include="Scripts\Script0001-DHYS-0000-Table Create.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

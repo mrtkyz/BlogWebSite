@@ -1,21 +1,34 @@
 ﻿using DbUp;
 using System;
-using System.Reflection;
+using System.Configuration;
+using System.Globalization;
+using System.IO;
+using System.Threading;
+using DbUp.Builder;
+using DbUp.Engine;
 
 namespace Database.Deployment
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var connectionString = "";
+            Thread.CurrentThread.CurrentCulture = Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr-TR");
+            var connectionString = ConfigurationManager.ConnectionStrings["DataEntities"].ConnectionString;
 
-            var upgrader = DeployChanges.To
+            UpgradeEngineBuilder upgradeEngineBuilder = DeployChanges.To
                 .SqlDatabase(connectionString)
-                .WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly())
-                .LogToConsole().Build();
+                .WithScriptsFromFileSystem(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../Scripts"))
+                .LogToConsole();
 
-            var result = upgrader.PerformUpgrade();
+            upgradeEngineBuilder.Configure(x =>
+            {
+                x.ScriptExecutor.ExecutionTimeoutSeconds = 30 * 60;
+            });
+
+            UpgradeEngine upgrader = upgradeEngineBuilder.Build();
+
+            DatabaseUpgradeResult result = upgrader.PerformUpgrade();
 
             if (result.Successful)
             {
