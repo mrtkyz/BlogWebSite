@@ -18,7 +18,7 @@ namespace Database.Deployment
 
             UpgradeEngineBuilder upgradeEngineBuilder = DeployChanges.To
                 .SqlDatabase(connectionString)
-                .WithScriptsFromFileSystem(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../Scripts"))
+                .WithScriptsFromFileSystem(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Scripts"))
                 .LogToConsole();
 
             upgradeEngineBuilder.Configure(x =>
