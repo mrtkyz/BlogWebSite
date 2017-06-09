@@ -119,6 +119,7 @@
       <LastGenOutput>DataModel.Context.cs</LastGenOutput>
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\DataEntities\DataModel.edmx.sql" />
     <Content Include="Models\DataEntities\DataModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DataModel.edmx</DependentUpon>

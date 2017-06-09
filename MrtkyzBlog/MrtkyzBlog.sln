@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrtkyzBlog", "MrtkyzBlog\Mr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.Deployment", "Database.Deployment\Database.Deployment.csproj", "{1F29895D-D838-4EF9-85AE-4584E8CE3713}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Mrtkyz.SqlDatabase", "Mrtkyz.SqlDatabase\Mrtkyz.SqlDatabase.sqlproj", "{88B1AAFE-2C86-4FCE-8A6F-663E613BBE6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{1F29895D-D838-4EF9-85AE-4584E8CE3713}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F29895D-D838-4EF9-85AE-4584E8CE3713}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F29895D-D838-4EF9-85AE-4584E8CE3713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B1AAFE-2C86-4FCE-8A6F-663E613BBE6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B1AAFE-2C86-4FCE-8A6F-663E613BBE6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B1AAFE-2C86-4FCE-8A6F-663E613BBE6F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{88B1AAFE-2C86-4FCE-8A6F-663E613BBE6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B1AAFE-2C86-4FCE-8A6F-663E613BBE6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B1AAFE-2C86-4FCE-8A6F-663E613BBE6F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
